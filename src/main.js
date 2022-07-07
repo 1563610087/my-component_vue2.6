@@ -1,8 +1,18 @@
-import Vue from "vue";
-import App from "./App.vue";
+import HelloWorld from './components/HelloWorld/index'
 
-Vue.config.productionTip = false;
 
-new Vue({
-  render: (h) => h(App),
-}).$mount("#app");
+const components=[
+  HelloWorld
+]
+
+
+const install=function(vue) {
+  components.forEach(component =>{
+    vue.component(component.name, component)
+  })
+}
+
+export default {
+  HelloWorld,
+  install
+}
