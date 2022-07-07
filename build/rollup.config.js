@@ -13,8 +13,8 @@ export default {
   },
   plugins:[
     nodeResolve(),
-    css({ output: 'bundle.css' }),
-    vue()
+    vue({css:false}),
+    css({ output: 'bundle333.css' }),
   ]
 
 }
