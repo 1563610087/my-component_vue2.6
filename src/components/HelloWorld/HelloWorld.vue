@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    {{ name }}
+    {{ name }}22
   </div>
 </template>
 <script>
